@@ -2,10 +2,10 @@
 
 use Faker\Generator as Faker;
 
-$factory->define(Model::class, function (Faker $faker) {
+$factory->define(App\Car::class, function (Faker $faker) {
     return [
         'make' => $faker->randomElement(['Ford','Honda','Toyota']),
-        'model' => $faker->sentence($nbWords = 6, $variableNbWords = true),
+        'model' => $faker->word,
         'year' => $faker->year($max = 'now'),
     ];
 });
