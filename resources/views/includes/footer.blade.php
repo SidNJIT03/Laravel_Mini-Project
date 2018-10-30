@@ -1,0 +1,1 @@
+<p>&copy; Laravel 2014-2018</p>
