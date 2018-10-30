@@ -80,6 +80,8 @@
                     @endauth
             @endif
                 <a href="{{ url('/about') }}">About</a>
+                <a href="{{ url('/contact') }}">Contact</a>
+
             </div>
 
             <div class="content">
