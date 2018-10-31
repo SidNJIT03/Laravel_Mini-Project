@@ -17,6 +17,6 @@ class CarDeleteTest extends TestCase
     {
         $car = Car::all()->find(6);
         $car->delete();
-        $this->assertDatabaseMissing('cars', ['model' => $car->model]);
+        $this->assertDatabaseMissing('cars', ['id' => $car->id]);
     }
 }
