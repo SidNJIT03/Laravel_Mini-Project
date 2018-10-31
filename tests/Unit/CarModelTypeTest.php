@@ -14,7 +14,7 @@ class CarModelTypeTest extends TestCase
      *
      * @return void
      */
-    public function testCarYearInternalTypeTest()
+    public function testCarModelTypeTest()
     {
         $car = Car::OrderBy('model')->first();
         $this->assertInternalType('string', $car->model);
