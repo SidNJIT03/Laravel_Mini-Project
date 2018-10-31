@@ -15,7 +15,7 @@ class UserDeleteTest extends TestCase
      */
     public function testUserDeleteTest()
     {
-        $user = User::all()->find(4);
+        $user = User::all()->find(7);
         $user->delete();
         $this->assertDatabaseMissing('users', ['name' => $user->name]);
     }
